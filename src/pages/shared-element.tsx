@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'; // importing FunctionComponent
 
 
-export const SharedElement: FunctionComponent = () => <aside>
+const SharedElement: FunctionComponent = () => <aside>
   <div className="admonition admonition-info alert alert--info">
     <div className="admonition-heading">
       <h5><span className="admonition-icon">
@@ -14,3 +14,5 @@ export const SharedElement: FunctionComponent = () => <aside>
     </div>
   </div>
 </aside>
+
+export default SharedElement;
