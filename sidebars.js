@@ -8,6 +8,11 @@ module.exports = {
     ],
     'Schema': [
       'schema/overview',
+    ],
+    'Tools & Apps': [
+      'tools/pipeline',
+      'tools/visual-graph-explorer',
+      'tools/stuctr-app'
     ]
   },
 };
