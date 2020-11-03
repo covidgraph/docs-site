@@ -6,6 +6,9 @@ module.exports = {
       'getting-started/graphql',
       'getting-started/data-sources'
     ],
+    'Schema': [
+      'schema/overview',
+    ],
     Docusaurus: ['doc1', 'doc2', 'doc3'],
     Features: ['mdx'],
   },
