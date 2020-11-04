@@ -5,7 +5,7 @@ sidebar_label: Neo4j Database
 slug: /neo4j
 ---
 
-import SharedElement from '../../src/pages/shared-element';
+import SharedElement from '../../src/components/shared-element';
 
 <SharedElement></SharedElement>
 
