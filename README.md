@@ -1,4 +1,6 @@
-# Website
+# Covid Graph Docs
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/31a99f8b-c0a9-43cb-9df4-b46811d118c2/deploy-status)](https://app.netlify.com/sites/covid-graph-docs/deploys)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 

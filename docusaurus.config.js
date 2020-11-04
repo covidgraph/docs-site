@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Covid Graph',
   tagline: 'Open COVID-19 Knowledge Graph',
-  url: 'https://covidgraph.org/',
+  url: 'https://covid-graph-docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
