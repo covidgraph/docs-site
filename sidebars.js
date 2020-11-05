@@ -6,8 +6,9 @@ module.exports = {
       'getting-started/graphql',
       'getting-started/data-sources'
     ],
-    'Schema': [
-      'schema/overview',
+    'API': [
+      'api/schema',
+      'api/objects/gene',
     ],
     'Tools & Apps': [
       'tools/pipeline',
@@ -15,4 +16,5 @@ module.exports = {
       'tools/stuctr-app'
     ]
   },
+  ...require("./docs/api/sidebar-schema"),
 };
