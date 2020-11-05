@@ -98,6 +98,8 @@ module.exports = {
       "@edno/docusaurus2-graphql-doc-generator",
       {
         schema: "https://covid-graph-graphql.now.sh/",
+        rootPath: "./docs",
+        linkRoot: "/docs/",
         baseURL: "api",
       },
     ],
