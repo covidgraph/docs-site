@@ -23,7 +23,12 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://covidgraph.org/',
+          label: 'Covid Graph Website',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/covidgraph/docs-site',
           label: 'GitHub',
           position: 'right',
         },
