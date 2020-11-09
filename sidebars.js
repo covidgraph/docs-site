@@ -4,11 +4,26 @@ module.exports = {
       'getting-started/intro', 
       'getting-started/neo4j', 
       'getting-started/graphql',
-      'getting-started/data-sources'
+      'getting-started/data-sources',
     ],
-    'API': [
+    'DB Schema & API': [
       'api/schema',
-      'api/objects/gene',
+      {'Papers' : [
+        'api/objects/paper',
+        'api/objects/author-collection',
+        'api/objects/author',
+        'api/objects/affiliation',
+        'api/objects/location',
+        'api/objects/reference-collection',
+        'api/objects/reference',
+        'api/objects/citation',
+        'api/objects/body-text',
+        'api/objects/abstract',
+      ]},
+      {'BioMedical' : [
+        'api/objects/gene-symbol',
+        'api/objects/gene',
+      ]}
     ],
     'Tools & Apps': [
       'tools/pipeline',
