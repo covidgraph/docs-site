@@ -42,9 +42,37 @@ Recommended to run this before pushing changes as errors can occur here that don
 npm run build
 ```
 
+Note: because of the hundreds of generated pages from the GraphQL schema, node can run out of memory on the build stage, to increase available memory whilst building you can run:
+
+```console
+NODE_OPTIONS="--max-old-space-size=4096" npm run build
+```
+
 ### Deployment
 
 The project is auto built and deployed to Netlify on each push.
+
+## Docker
+
+We have two Dockerfile's one for development (with hot load etc) and one for production.
+
+### Development
+
+Changes to the package dependencies will require a rebuild. Changes to the GraphQL schema will require a restart. Changes to everything else should be hot loaded.
+
+```console
+docker build -f Dockerfile-dev -t cgdocs-dev .
+docker run -v $(pwd):/app -p 3000:3000 cgdocs-dev
+```
+
+### Production
+
+Any change will require a full rebuild.
+
+```console
+docker build -t cgdocs-prod .
+docker run -p 3000:3000 cgdocs-prod
+```
 
 ## Project Management
 

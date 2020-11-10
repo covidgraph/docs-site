@@ -1,0 +1,5 @@
+FROM node:10.23-alpine
+
+WORKDIR /app
+
+CMD [ "npm", "run", "start-dev-docker"]
