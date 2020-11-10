@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "start-dev-docker": "npx docusaurus graphql-to-doc && docusaurus start --host 0.0.0.0 --no-open",
     "build": "npx docusaurus graphql-to-doc -f && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

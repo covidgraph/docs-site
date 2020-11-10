@@ -1,0 +1,15 @@
+FROM node:12.13-alpine
+
+WORKDIR /data
+
+COPY package*.json ./
+
+RUN npm install
+
+ENV PATH /data/node_modules/.bin:$PATH
+
+WORKDIR /data/app
+
+COPY . .
+
+CMD [ "npm", "run", "start-dev-docker"]
