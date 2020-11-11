@@ -10,6 +10,8 @@ Built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website g
 
 ## Development
 
+Local instances will be served at [http://localhost:3000/](http://localhost:3000/) by default.
+
 ### Initialise project:
 
 ```console
@@ -34,7 +36,7 @@ npm run start
 
 ### Build
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service. It will also generate the GraplQL schema pages.
+This command generates static content into the `build` directory and can be served using any static contents hosting service. It will also generate the GraphQL schema pages.
 
 Recommended to run this before pushing changes as errors can occur here that don't occur in the local dev environment.
 
@@ -46,6 +48,12 @@ Note: because of the hundreds of generated pages from the GraphQL schema, node c
 
 ```console
 NODE_OPTIONS="--max-old-space-size=4096" npm run build
+```
+
+Serve the static build with:
+
+```console
+npm run serve
 ```
 
 ### Deployment
@@ -62,7 +70,7 @@ Changes to the package dependencies will require a rebuild. Changes to the Graph
 
 ```console
 docker build -f Dockerfile-dev -t cgdocs-dev .
-docker run -v $(pwd):/app -p 3000:3000 cgdocs-dev
+docker run -v $(pwd):/data/app -p 3000:3000 cgdocs-dev
 ```
 
 ### Production
