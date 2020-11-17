@@ -5,11 +5,85 @@ sidebar_label: Introduction
 slug: /
 ---
 
-import SharedElement from '../../src/components/shared-element';
+import ServerStatus from '../../src/components/server-status';
 
-<SharedElement></SharedElement>
+<ServerStatus></ServerStatus>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+***
+### Welcome to the [Covid*Graph Project](https://covidgraph.org)
+***
+
+# Communication
+
+We use [Matrix](https://matrix.org/) to communicate. It's a free and federated Slack. [Element](https://element.io/), formerly Riot, is the standard client for Matrix and there is ample [online guidance](https://www.snoyman.com/blog/2018/05/guide-to-matrix-riot).
+
+#### How to get started:
+
+1. Download Element or start the web app: https://element.io/get-started
+2. When asked to login/signup: create a free account on the matrix.org homeserver
+3. To join our main room, click 'explore', search for our room and then click join: `#covidgraph:meet.dzd-ev.de`
+
+It would help if you set your full name in your Riot profile and if you introduced yourself in the main room.
+
+## Structure on Matrix
+
+We have a main room with everyone and a couple of sub groups for specific topics. We try to organize and to make sure that everyone is in the right groups. Contact Martin Preusse if you would like to be added to any of the rooms.
+
+- CovidGraph (main room)
+- CovidGraph Communication
+- CovidGraph Infrastructure
+- CovidGraph Visualization
+- CovidGraph Data Sources
+- CovidGraph Use Cases
+- CovdidGraph Data Analysis
+
+# Repositories
+There are several repos that make up the CovidGraph Project. You can see the full list of [Repositories on the CovidGraph GitHub Team Page](https://github.com/covidgraph) but a few key repos are:
+* **[/covidgraph/documentation](https://github.com/covidgraph/documentation)** : The project's main wiki and project level issue tracker live here. A list of suggested, in-progress and loaded data sources are tracked as epics in ZenHub.
+* **[/covidgraph/motherlode](https://github.com/covidgraph/motherlode)**: Pipeline for running all dataloader scripts for covidgraph in a controlled manner. All loaded data sources are registered with additional metadata in [data_sources_registry](https://github.com/covidgraph/motherlode/blob/master/motherlode/data_sources_registry.py)
+* **[/covidgraph/data_template](https://github.com/covidgraph/data_template)**: Template for covidgraph data loader
+* **[/covidgraph/visual-graph-explorer](https://github.com/covidgraph/visual-graph-explorer)**: A simple graph explorer leveraging yFiles for HTML, neo4j bolt, implemented using VueJS and Vuetify
+* **[/covidgraph/covidgraph_org](https://github.com/covidgraph/covidgraph_org)**: Repo for the public website https://covidgraph.org.
+
+# Issue Tracking
+
+We manage and track issues, data sources and use-cases using ZenHub.
+* [The CovidGraph Board](https://app.zenhub.com/workspaces/the-covidgraph-board-5e9c02aa9ff5df3379cdec8c/board?)
+* [ZenHub Guidance](https://github.com/covidgraph/documentation/wiki/ZenHub)
+
+CovidGraph has several active communication channels in Riot/Matrix which are good places to ask questions and find answers. As a general rule of thumb we try to ensure that we capture any useful information in ways that make it easier to find again in future. Please consider if your question may better be raised as an issue or if your observation may better be added to a wiki page and signposted from the Matrix/Riot channels. **Ultimately there is no wrong way to do things and we actively encourage engagement however you feel comfortable.**
+
+# Help Wanted
+Check the Zenhub [CovidGraph Board for any issues tagged as 'help wanted'](https://app.zenhub.com/workspaces/the-covidgraph-board-5e9c02aa9ff5df3379cdec8c/board?labels=help%20wanted&repos=251283493,249963498,250642826,249955741,252452561,257212226,249677899,248512309,254379086,254310898,254353397,259324438,252660505,252680515&showPRs=false). The ZenHub board includes issues from all repos but you can filter by specific repos if you prefer.
+
+# Website
+
+Network & community are important. It would be great to add you to the team on our website: https://covidgraph.org/team
+
+Please reach out to Axel Morgner (@amorgner:matrix.org). We need a picture and a short profile. You should be in our Matrix room and stay in touch with the team.
+
+# LinkedIn & Social Media
+
+CovidGraph has anactive Twitter and LinkedIn presence and we encourage our community to engage, promote and share news about the project.
+
+## [LinkedIn](https://www.linkedin.com/company/covidgraph/about/)
+If you are an active contributor to the project, you are welcome to add a section to their profiles to promote any work you have been doing for CovidGraph. We suggest adding a new employment section and select CovidGraph as the employer as opposed to adding a new Volunteer section as you will then appear on the people tab of CovidGraph's LinkedIn page. You can select part-time and mention in the title you choose that the role is voluntary.
+
+## [Twitter](https://twitter.com/CovidGraph)
+
+
+# CovidGraph Key Contacts
+* **Martin Preusse (Kaiser & Preusse)** @mpreusse:matrix.org (Community, Data Sources)
+* **Alexander Jarasch (DZD)** @alexander.jarasch:meet.dzd-ev.de (Data Sources)
+* **Axel Morgner (Structr)** @amorgner:matrix.org (Website)
+* **Jamie Munro** @jiros:matrix.org (Documentation, Zenhub)
+* **Mark Collins** @hlmxteam:matrix.org (Data Sources, Hetionet)
+* **Tim Bleimehl (DZD)** @tim.bleimehl:meet.dzd-ev.de (Data sources, data_sources_registry)
+* **Sebastian Müller (yWorks)** @sebastian.mueller:matrix.org (Visual Graph Explorer)
+* **Anke Pachauer** @anke_pachauer:matrix.org (Marketing & Communications)
+* **Claudia Remlinger (Neo4j)** @cremlinger:matrix.org (Marketing & Communications)
+* **Alexander Erdl (Neo4j)** @alekusi.neo:matrix.org (Marketing & Communications)
+
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
 
