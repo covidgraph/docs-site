@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 slug: /
 ---
-
+import SchemaDiagram from '../../src/components/schema-diagram';
 import ServerStatus from '../../src/components/server-status';
 
 <ServerStatus></ServerStatus>
@@ -13,37 +13,9 @@ import ServerStatus from '../../src/components/server-status';
 ### Welcome to the [Covid*Graph Project](https://covidgraph.org)
 ***
 
-# Communication
+<SchemaDiagram></SchemaDiagram>
 
-We use [Matrix](https://matrix.org/) to communicate. It's a free and federated Slack. [Element](https://element.io/), formerly Riot, is the standard client for Matrix and there is ample [online guidance](https://www.snoyman.com/blog/2018/05/guide-to-matrix-riot).
 
-#### How to get started:
-
-1. Download Element or start the web app: https://element.io/get-started
-2. When asked to login/signup: create a free account on the matrix.org homeserver
-3. To join our main room, click 'explore', search for our room and then click join: `#covidgraph:meet.dzd-ev.de`
-
-It would help if you set your full name in your Riot profile and if you introduced yourself in the main room.
-
-## Structure on Matrix
-
-We have a main room with everyone and a couple of sub groups for specific topics. We try to organize and to make sure that everyone is in the right groups. Contact Martin Preusse if you would like to be added to any of the rooms.
-
-- CovidGraph (main room)
-- CovidGraph Communication
-- CovidGraph Infrastructure
-- CovidGraph Visualization
-- CovidGraph Data Sources
-- CovidGraph Use Cases
-- CovdidGraph Data Analysis
-
-# Repositories
-There are several repos that make up the CovidGraph Project. You can see the full list of [Repositories on the CovidGraph GitHub Team Page](https://github.com/covidgraph) but a few key repos are:
-* **[/covidgraph/documentation](https://github.com/covidgraph/documentation)** : The project's main wiki and project level issue tracker live here. A list of suggested, in-progress and loaded data sources are tracked as epics in ZenHub.
-* **[/covidgraph/motherlode](https://github.com/covidgraph/motherlode)**: Pipeline for running all dataloader scripts for covidgraph in a controlled manner. All loaded data sources are registered with additional metadata in [data_sources_registry](https://github.com/covidgraph/motherlode/blob/master/motherlode/data_sources_registry.py)
-* **[/covidgraph/data_template](https://github.com/covidgraph/data_template)**: Template for covidgraph data loader
-* **[/covidgraph/visual-graph-explorer](https://github.com/covidgraph/visual-graph-explorer)**: A simple graph explorer leveraging yFiles for HTML, neo4j bolt, implemented using VueJS and Vuetify
-* **[/covidgraph/covidgraph_org](https://github.com/covidgraph/covidgraph_org)**: Repo for the public website https://covidgraph.org.
 
 # Issue Tracking
 
@@ -53,8 +25,12 @@ We manage and track issues, data sources and use-cases using ZenHub.
 
 CovidGraph has several active communication channels in Riot/Matrix which are good places to ask questions and find answers. As a general rule of thumb we try to ensure that we capture any useful information in ways that make it easier to find again in future. Please consider if your question may better be raised as an issue or if your observation may better be added to a wiki page and signposted from the Matrix/Riot channels. **Ultimately there is no wrong way to do things and we actively encourage engagement however you feel comfortable.**
 
+
 # Help Wanted
 Check the Zenhub [CovidGraph Board for any issues tagged as 'help wanted'](https://app.zenhub.com/workspaces/the-covidgraph-board-5e9c02aa9ff5df3379cdec8c/board?labels=help%20wanted&repos=251283493,249963498,250642826,249955741,252452561,257212226,249677899,248512309,254379086,254310898,254353397,259324438,252660505,252680515&showPRs=false). The ZenHub board includes issues from all repos but you can filter by specific repos if you prefer.
+
+
+
 
 # Website
 
