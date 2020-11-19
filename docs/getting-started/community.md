@@ -1,13 +1,17 @@
 ---
-id: communication
-title: Communication
-sidebar_label: Communication
-slug: /communication
+id: community
+title: Community
+sidebar_label: Community
+slug: /community
 ---
+
+CovidGraph has an active and friendly community. We welcome anyone who wants to use CovidGraph, help us to develop and improve it or is simply interested in what we are doing.
+
+## Matrix & Element
 
 We use [Matrix](https://matrix.org/) to communicate. It's a free and federated Slack. [Element](https://element.io/), formerly Riot, is the standard client for Matrix and there is ample [online guidance](https://www.snoyman.com/blog/2018/05/guide-to-matrix-riot).
 
-#### How to get started:
+## Installing Element
 
 1. Download Element or start the web app: https://element.io/get-started
 2. When asked to login/signup: create a free account on the matrix.org homeserver
