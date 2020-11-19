@@ -2,13 +2,15 @@ module.exports = {
   someSidebar: {
     'Getting started': [
       'getting-started/intro',
-      'getting-started/communication',
+      'getting-started/community',
       'getting-started/neo4j',
       'getting-started/graphql',
       'getting-started/data-sources',
     ],
     'Repositories': [
-      'repositories/repositories',
+      'repositories/overview',
+      'repositories/data-loading-repos',
+      'repositories/application-repos',
     ],
     'DB Schema & API': [
       'api/schema',
