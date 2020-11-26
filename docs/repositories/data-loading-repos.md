@@ -6,7 +6,4 @@ slug: /data-loading-repos
 ---
 import DataLoadingRepos from '../../src/components/data-loading-repos';
 
-
-## Data Loading Repositories
-
 <DataLoadingRepos></DataLoadingRepos>
