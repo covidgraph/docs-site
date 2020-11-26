@@ -30,7 +30,7 @@
     display: grid;
     grid-gap: 5px;
 grid-template-columns: 20% 30% 50%;
-padding: 20px;
+padding: 10px;
 color: #444;
 }
 
@@ -38,7 +38,7 @@ color: #444;
 background-color: #444;
 color: #fff;
 border-radius: 5px;
-padding: 20px;
+padding: 10px;
 font-size: 120%;
 
 }

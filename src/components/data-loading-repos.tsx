@@ -7,7 +7,7 @@ const DataLoadingRepos: FunctionComponent = () => <aside>
 <div class="wrapper">
   <div class="box repo-name">Data-Cord19</div>
   <div class="box repo-maintainer"><a href="https://covidgraph.org/team-interview/9321382efb154a5194ec397374b9caf9">Tim Bleimehl</a></div>
-  <div class="box repo-description"><a href>Script to transform data set from the Covid-19 Open Research Dataset (CORD) Challenge into a Neo4j graph</a></div>
+  <div class="box repo-description">Script to transform data set from the Covid-19 Open Research Dataset (CORD) Challenge into a Neo4j graph</div>
   <div class="box repo-links"><a href="https://github.com/covidgraph/data_cord19" target="_blank">README</a>
     <div><a href="https://github.com/covidgraph/data_cord19/releases" target="_blank">RELEASES</a></div>
   </div>
@@ -22,7 +22,7 @@ const DataLoadingRepos: FunctionComponent = () => <aside>
 <div class="wrapper">
   <div class="box repo-name">Data-Cord19</div>
   <div class="box repo-maintainer"><a href="https://covidgraph.org/team-interview/9321382efb154a5194ec397374b9caf9">Tim Bleimehl</a></div>
-  <div class="box repo-description"><a href>Script to transform data set from the Covid-19 Open Research Dataset (CORD) Challenge into a Neo4j graph</a></div>
+  <div class="box repo-description">Script to transform data set from the Covid-19 Open Research Dataset (CORD) Challenge into a Neo4j graph</div>
   <div class="box repo-links"><a href="https://github.com/covidgraph/data_cord19" target="_blank">README</a>
     <div><a href="https://github.com/covidgraph/data_cord19/releases" target="_blank">RELEASES</a></div>
   </div>
