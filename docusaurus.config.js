@@ -1,18 +1,18 @@
 module.exports = {
-  title: 'Covid Graph',
-  tagline: 'Open COVID-19 Knowledge Graph',
+  title: 'HealthECCO',
+  tagline: 'Connecting the docs for better research',
   url: 'https://covid-graph-docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'HealthECCO', // Usually your GitHub org/user name.
+  projectName: 'CovidGraph', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Covid Graph',
+      title: 'HealthECCO',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/he_logo.png',
       },
       items: [
         {
@@ -23,8 +23,8 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://covidgraph.org/',
-          label: 'Covid Graph Website',
+          href: 'https://healthecco.org/',
+          label: 'HealthECCO Website',
           position: 'right',
         },
         {
@@ -46,12 +46,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/covidgraph/about/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Matrix',
+              href: '/docs/matrix',
             },
             {
               label: 'Twitter',
@@ -68,12 +68,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/covidgraph',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HealthEcco Built with Docusaurus.`,
     },
   },
   presets: [
@@ -90,7 +90,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://healthecco.org',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

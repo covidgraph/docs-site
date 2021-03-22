@@ -2,10 +2,8 @@ module.exports = {
   someSidebar: {
     'Getting started': [
       'getting-started/intro',
-      'getting-started/community',
-      'getting-started/neo4j',
-      'getting-started/graphql',
-      'getting-started/data-sources',
+      'getting-started/get-involved',
+      'getting-started/matrix',
     ],
     'Repositories': [
       'repositories/overview',
@@ -31,10 +29,10 @@ module.exports = {
         'api/objects/gene',
       ]}
     ],
-    'Tools & Apps': [
-      'tools/pipeline',
-      'tools/visual-graph-explorer',
-      'tools/stuctr-app'
+    'Applications': [
+      'applications/visual-graph-explorer',
+      'applications/react',
+      'applications/stuctr-app'
     ]
   },
   ...require("./docs/api/sidebar-schema"),
