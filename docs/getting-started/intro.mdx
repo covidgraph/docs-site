@@ -1,76 +1,34 @@
 ---
 id: intro
-title: Introduction
+title: Welcome to HealthECCO
 sidebar_label: Introduction
 slug: /
 ---
-import SchemaDiagram from '../../src/components/schema-diagram';
 import ServerStatus from '../../src/components/server-status';
+import Mermaid from '@theme/Mermaid'
 
-<ServerStatus></ServerStatus>
+<ServerStatus />
 
 ***
-### Welcome to the [Covid*Graph Project](https://covidgraph.org)
-***
+CovidGraph is a knowledge graph built in Neo4j by a dedicated community of graph enthusiasts and volunteers. CovidGraph integrates and enriches a number of public data sources including PubMed articles, clinical trials, patents and a comprehensive array of biomedical concepts.
 
-<SchemaDiagram></SchemaDiagram>
+There is a growing ecosystem of applications that help facilitate access to the data in the core knowledge graph.
 
-Test
-
-
-# Issue Tracking
-
-We manage and track issues, data sources and use-cases using ZenHub.
-* [The CovidGraph Board](https://app.zenhub.com/workspaces/the-covidgraph-board-5e9c02aa9ff5df3379cdec8c/board?)
-* [ZenHub Guidance](https://github.com/covidgraph/documentation/wiki/ZenHub)
-
-CovidGraph has several active communication channels in Riot/Matrix which are good places to ask questions and find answers. As a general rule of thumb we try to ensure that we capture any useful information in ways that make it easier to find again in future. Please consider if your question may better be raised as an issue or if your observation may better be added to a wiki page and signposted from the Matrix/Riot channels. **Ultimately there is no wrong way to do things and we actively encourage engagement however you feel comfortable.**
-
-
-# Help Wanted
-Check the Zenhub [CovidGraph Board for any issues tagged as 'help wanted'](https://app.zenhub.com/workspaces/the-covidgraph-board-5e9c02aa9ff5df3379cdec8c/board?labels=help%20wanted&repos=251283493,249963498,250642826,249955741,252452561,257212226,249677899,248512309,254379086,254310898,254353397,259324438,252660505,252680515&showPRs=false). The ZenHub board includes issues from all repos but you can filter by specific repos if you prefer.
-
-
-
-
-# Website
-
-Network & community are important. It would be great to add you to the team on our website: https://covidgraph.org/team
-
-Please reach out to Axel Morgner (@amorgner:matrix.org). We need a picture and a short profile. You should be in our Matrix room and stay in touch with the team.
-
-# LinkedIn & Social Media
-
-CovidGraph has anactive Twitter and LinkedIn presence and we encourage our community to engage, promote and share news about the project.
-
-## [LinkedIn](https://www.linkedin.com/company/covidgraph/about/)
-If you are an active contributor to the project, you are welcome to add a section to their profiles to promote any work you have been doing for CovidGraph. We suggest adding a new employment section and select CovidGraph as the employer as opposed to adding a new Volunteer section as you will then appear on the people tab of CovidGraph's LinkedIn page. You can select part-time and mention in the title you choose that the role is voluntary.
-
-## [Twitter](https://twitter.com/CovidGraph)
-
-
-# CovidGraph Key Contacts
-* **Martin Preusse (Kaiser & Preusse)** @mpreusse:matrix.org (Community, Data Sources)
-* **Alexander Jarasch (DZD)** @alexander.jarasch:meet.dzd-ev.de (Data Sources)
-* **Axel Morgner (Structr)** @amorgner:matrix.org (Website)
-* **Jamie Munro** @jiros:matrix.org (Documentation, Zenhub)
-* **Mark Collins** @hlmxteam:matrix.org (Data Sources, Hetionet)
-* **Tim Bleimehl (DZD)** @tim.bleimehl:meet.dzd-ev.de (Data sources, data_sources_registry)
-* **Sebastian Müller (yWorks)** @sebastian.mueller:matrix.org (Visual Graph Explorer)
-* **Anke Pachauer** @anke_pachauer:matrix.org (Marketing & Communications)
-* **Claudia Remlinger (Neo4j)** @cremlinger:matrix.org (Marketing & Communications)
-* **Alexander Erdl (Neo4j)** @alekusi.neo:matrix.org (Marketing & Communications)
-
-
-You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
-
-export const Highlight = ({children, color}) => ( <span style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>{children}</span> );
-
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
-
-I can write **Markdown** alongside my _JSX_!
+<Mermaid chart={`
+%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
+  graph TB
+    HE((HealthECCO))-->|develops|CG[(CovidGraph)]
+    HE-->|develops|VGE("Visual Graph Explorer")
+    HE-->|develops|RA("React App")
+    HE-->|develops|SA("Structr App")
+    VGE-->|"connects to"|CG
+    RA-->|"connects to"|CG
+    SA-->|"connects to"|CG
+        subgraph applications
+          VGE
+          RA
+          SA
+        end
+    click HE href "https://healthecco.org" "The HealthECCO Website"
+    click CG href "https://covidgraph.org" "The CovidGraph Website"
+    `}/>

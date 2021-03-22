@@ -1,9 +1,6 @@
 ---
 id: application-repos
 title: Application Repositories
-sidebar_label: Applications
+sidebar_label: Application Repos
 slug: /application-repos
 ---
-import ApplicationRepos from '../../src/components/application-repos';
-
-<ApplicationRepos></ApplicationRepos>
