@@ -67,4 +67,5 @@ import Mermaid from '@theme/Mermaid'
     %%===Links===
     click HE href "https://healthecco.org" "The HealthECCO Website"
     click CG href "https://covidgraph.org" "The CovidGraph Website"
+    click C19 href "/docs/data-loading-repos#data_cord19"
     `}/>

@@ -6,6 +6,19 @@ slug: /data-loading-repos
 ---
 import Mermaid from '@theme/Mermaid'
 
+## motherlode
+Motherlode is a pipeline designed to run all of the data loading scripts in a controlled manner, resolving data loader dependencies, keeping track of which data loaders are already in the graph and tracking versions.
+
+<Mermaid chart={`
+%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
+  graph LR
+    JHU{{data_jhu_population}}-->|"depends on"|FTI{{Full Text Indexes}}
+    TGM{{Text Gene Match}}-->|"depends on"|DBio{{data_biobase}}
+    TGM{{Text Gene Match}}-->|"depends on"|Lens{{lens-patent-data}}
+    Repo{{Motherlode}}-->|"maintained by"|Maintainer([Tim Bleimehl])
+    click Maintainer href "https://github.com/motey" "GitHub Maintainer Profile" _blank    
+    `}/>
+
 ## data_cord19
 
 A collection of COVID-19 related scientific papers with metadata like authors, affiliations, references transformed from the [COVID-19 Open Research Dataset Challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/data)

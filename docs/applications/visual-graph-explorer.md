@@ -14,17 +14,14 @@ import Mermaid from '@theme/Mermaid'
 <Mermaid chart={`
 %%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
   graph LR
-        CG[(CovidGraph)]-->Live("Live Server")
-    CG-->Dev("Dev Server")
-    Live-->yW([yWorks])
-    Dev-->yW
+    yW([yWorks])-->Live("Live Server")
+    yW-->Dev("Dev Server")
         subgraph "click to open"
           Live
           Dev
         end
-    click CG href "https://covidgraph.org" "The CovidGraph Website" _blank
     click Live href "https://live.yworks.com/covidgraph" "Live Visual Graph Explorer" _blank
-    click Dev href "https://db-dev.yworks.com/covidgraph" "Dev Visual Graph Explorer" _blank
+    click Dev href "https://live.yworks.com/covidgraph/?db=staging" "Dev Visual Graph Explorer" _blank
     click yW href "https://yworks.com" "yWorks Website" _blank
     `}/>
 
