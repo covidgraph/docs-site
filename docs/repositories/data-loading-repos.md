@@ -32,6 +32,8 @@ A collection of COVID-19 related scientific papers with metadata like authors, a
     click Node4 href "/docs/api/objects/author"
     `}/>
 
+---
+
 ## data_biobase
 
 The base biomedical concepts from Gtex, GeneOntology, Reactome, NcbiTaxonomy, NcbiGene, BigWordList, Ensembl, Refseq, Uniprot
@@ -55,6 +57,8 @@ The base biomedical concepts from Gtex, GeneOntology, Reactome, NcbiTaxonomy, Nc
     click Node3 href "/docs/api/objects/protein"
     `}/>
 
+---
+
 ## data_jhu_population
 
 Covid case statistics from Jonhs Hopkins University and UN World Population data
@@ -77,6 +81,7 @@ Covid case statistics from Jonhs Hopkins University and UN World Population data
     click Repo href "https://github.com/covidgraph/data_jhu_population" "GitHub Repo" _blank
     `}/>
 
+---
 
 ## data-lens-org-covid19-patents
 
@@ -100,6 +105,8 @@ Data transformed from the Lens.org Covid19 Patent Dataset
     click Node2 href "/docs/api/objects/patent-title"
     click Node3 href "/docs/api/objects/patent-abstract"
     `}/>
+
+---
 
 ## Clinical Trials
 
@@ -126,6 +133,8 @@ Data transformed from ClinicalTrials.gov. For additional information see this [r
     click Node3 href "/docs/api/objects/inclusion-criteria"
     click Node4 href "/docs/api/objects/exclusion-criteria"
     `}/>
+
+  ---
 
 ## helomics/data_hetionet
 
