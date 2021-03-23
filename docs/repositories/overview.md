@@ -12,15 +12,7 @@ import Mermaid from '@theme/Mermaid'
     %%
     %%===Data Sources===
     PM([PubMed])-->C19{{data_cord19}}
-    GTex([GTex])-->DBio{{data_biobase}}
-    GO([GeneOntology])-->DBio
-    ReO([Reactome])-->DBio
-    NcbiT([NcbiTaxonomy])-->DBio
-    NcbiG([NcbiGene])-->DBio
-    BWL([BigWordList])-->DBio
-    ENS([Ensembl])-->DBio
-    RSeq([RefSeq])-->DBio
-    UP([Uniprot])-->DBio
+    BioMed([BioMedical x 9])-->DBio{{data_biobase}}
     Lens([Lens.org])-->Patents{{covid19-patents}}
     CTG([ClinicalTrials.gov])-->Trials{{data_clinical-trials-gov}}
     JHU([Johns Hopkins])-->Stats{{data_jhu_population}}
@@ -39,23 +31,15 @@ import Mermaid from '@theme/Mermaid'
     CG-->SA{{Structr App}}
     %%
     %%===Graph Processing Repos
-    FTI([fulltext-indexes])-->CG
-    Frag([fragmentize_text])-->CG
-    TGM([text_gene_match])-->CG
-    BioBert([data-biobert])-->CG
+    FTI{{fulltext-indexes}}-->CG
+    Frag{{fragmentize_text}}-->CG
+    TGM{{text_gene_match}}-->CG
+    BioBert{{data-biobert}}-->CG
     %%
     %%===Sub Graphs===
         subgraph "data sources"
           PM
-          GTex
-          GO
-          ReO
-          NcbiT
-          NcbiG
-          BWL
-          ENS
-          RSeq
-          UP
+          BioMed
           Lens
           CTG
           JHU
