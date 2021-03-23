@@ -18,7 +18,19 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Developers',
+          position: 'left',
+        },
+        {
+          to: 'docs/visual-graph-explorer',
+          activeBasePath: 'docs',
+          label: 'Applications',
+          position: 'left',
+        },
+        {
+          to: 'docs/api/schema',
+          activeBasePath: 'docs',
+          label: 'CovidGraph-Schema',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
