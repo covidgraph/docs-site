@@ -13,7 +13,13 @@ import React, { useEffect } from "react"
 import mermaid from "mermaid"
 
 mermaid.initialize({
-  startOnLoad: true
+  startOnLoad: true,
+  theme: 'neutral',
+  flowchart:{
+    useMaxWidth:true,
+    htmlLabels:true,
+    curve:'basis',
+  },
 })
 
 const Mermaid = ({ chart }) => {
