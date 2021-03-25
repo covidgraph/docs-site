@@ -4,11 +4,17 @@ module.exports = {
       'getting-started/intro',
       'getting-started/get-involved',
       'getting-started/matrix',
+      'developers/conventions',
     ],
     'Repositories': [
       'repositories/overview',
       'repositories/data-loading-repos',
+      'repositories/data-loading-pipeline',
       'repositories/application-repos',
+    ],
+    'Infrastructure': [
+      'infrastructure/status',
+      'infrastructure/servers',
     ],
     'Use Cases': [
       'use-cases/research',

@@ -30,17 +30,17 @@ module.exports = {
         {
           to: 'docs/api/schema',
           activeBasePath: 'docs',
-          label: 'CovidGraph-Schema',
+          label: 'Schema',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://healthecco.org/',
           label: 'HealthECCO Website',
           position: 'right',
         },
         {
-          href: 'https://github.com/covidgraph/docs-site',
+          href: 'https://github.com/covidgraph',
           label: 'GitHub',
           position: 'right',
         },
@@ -96,7 +96,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/covidgraph/docs-site/edit/master/',
+            'https://github.com/covidgraph/',
         },
         blog: {
           showReadingTime: true,
