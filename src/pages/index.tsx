@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Developer Resources',
     imageUrl: 'img/people.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Resources, tools and information for developers and enthusiasts working on all areas of CovidGraph, including data loading, graph processing, server infrastructure as well as the front end applications like the Visual Graph Explorer and the React App.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'End User Guidance',
     imageUrl: 'img/wave.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Application guidance aimed at Researchers, Policy Makers, Journalists, Healthcare workers and interested members of the public to get the most out of the rich data connections in CovidGraph.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Full Schema Documentation',
     imageUrl: 'img/graph.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Comprehensive and detailed Schema documentation and resources, primarily to help developers navigate the structure of the graph but also useful for more technically minded users seeking more context.
       </>
     ),
   },

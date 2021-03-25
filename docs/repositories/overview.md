@@ -7,7 +7,6 @@ slug: /overview
 import Mermaid from '@theme/Mermaid'
 
 <Mermaid chart={`
-%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
   graph LR
     %%
     %%===Data Sources===
@@ -24,6 +23,7 @@ import Mermaid from '@theme/Mermaid'
     Patents-->CG
     Trials-->CG
     Stats-->CG
+    DL{{"Motherlode"}}-->CG
     %%
     %%===Application Repos
     CG-->VGE{{"Visual Graph Explorer"}}
@@ -51,6 +51,7 @@ import Mermaid from '@theme/Mermaid'
           Patents
           Trials
           Stats
+          DL
         end
         subgraph "graph processing repos"
           FTI
