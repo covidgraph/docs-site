@@ -1,34 +1,46 @@
 module.exports = {
-  title: 'Covid Graph',
-  tagline: 'Open COVID-19 Knowledge Graph',
+  title: 'HealthECCO',
+  tagline: 'Connecting the docs for better research',
   url: 'https://covid-graph-docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'HealthECCO', // Usually your GitHub org/user name.
+  projectName: 'CovidGraph', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Covid Graph',
+      title: 'HealthECCO',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/he_logo.png',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Developers',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://covidgraph.org/',
-          label: 'Covid Graph Website',
+          to: 'docs/visual-graph-explorer',
+          activeBasePath: 'docs',
+          label: 'Applications',
+          position: 'left',
+        },
+        {
+          to: 'docs/api/schema',
+          activeBasePath: 'docs',
+          label: 'Schema',
+          position: 'left',
+        },
+        // {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://healthecco.org/',
+          label: 'HealthECCO Website',
           position: 'right',
         },
         {
-          href: 'https://github.com/covidgraph/docs-site',
+          href: 'https://github.com/covidgraph',
           label: 'GitHub',
           position: 'right',
         },
@@ -46,12 +58,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/covidgraph/about/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Matrix',
+              href: '/docs/matrix',
             },
             {
               label: 'Twitter',
@@ -68,12 +80,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/covidgraph',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HealthEcco Built with Docusaurus.`,
     },
   },
   presets: [
@@ -84,13 +96,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/covidgraph/docs-site/edit/master/',
+            'https://github.com/covidgraph/docs-site/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://healthecco.org',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

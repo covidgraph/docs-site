@@ -1,34 +1,39 @@
 module.exports = {
-  someSidebar: {
+  generalSidebar: {
     'Getting started': [
-      'getting-started/intro', 
-      'getting-started/neo4j', 
-      'getting-started/graphql',
-      'getting-started/data-sources',
+      'getting-started/intro',
+      'getting-started/get-involved',
+      'getting-started/matrix',
     ],
-    'DB Schema & API': [
-      'api/schema',
-      {'Papers' : [
-        'api/objects/paper',
-        'api/objects/author-collection',
-        'api/objects/author',
-        'api/objects/affiliation',
-        'api/objects/location',
-        'api/objects/reference-collection',
-        'api/objects/reference',
-        'api/objects/citation',
-        'api/objects/body-text',
-        'api/objects/abstract',
-      ]},
-      {'BioMedical' : [
-        'api/objects/gene-symbol',
-        'api/objects/gene',
-      ]}
+    'Repositories': [
+      'repositories/overview',
+      'repositories/data-loading-repos',
+      'repositories/data-loading-pipeline',
+      'repositories/graph-processing-repos',
+      'repositories/application-repos',
+      'repositories/infrastructure-repos',
     ],
-    'Tools & Apps': [
-      'tools/pipeline',
-      'tools/visual-graph-explorer',
-      'tools/stuctr-app'
+    'Developer Resources': [
+      'developers/conventions',
+      'developers/dev-tools'
+    ],
+    'Infrastructure': [
+      'infrastructure/status',
+      'infrastructure/servers',
+    ],
+    'Use Cases': [
+      'use-cases/research',
+      'use-cases/healthcare',
+      'use-cases/policy',
+      'use-cases/patent-search',
+      'use-cases/media',
+    ],
+  },
+  applicationSidebar: {
+      'Applications': [
+      'applications/visual-graph-explorer',
+      'applications/react',
+      'applications/stuctr-app'
     ]
   },
   ...require("./docs/api/sidebar-schema"),
