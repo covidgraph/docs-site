@@ -9,7 +9,7 @@ import ServerStatus from '../../src/components/server-status';
 Use something like NetData that can give us badges we can embed here
 
 ## CovidGraph
- <ServerStatus />  <ServerStatus /> 
+ <ServerStatus />  <ServerStatus />
 
 
 Live server badges
@@ -30,3 +30,7 @@ Is it possible to have graph stats to publish here? e.g.
 <ServerStatus />
 
 Server badges
+
+## Docusaurus
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c94a5dd-a3c0-49ba-80e7-a34338768db2/deploy-status)](https://app.netlify.com/sites/healthecco-docs/deploys)

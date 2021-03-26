@@ -11,10 +11,10 @@ import Mermaid from '@theme/Mermaid'
   graph RL
     VGEl("Live Visual Graph Explorer")-->|"connects to"|CGl[(Live CovidGraph)]
     VGEd("Dev Visual Graph Explorer")-->|"connects to"|CGd[(Dev CovidGraph)]
-    RAl("Live React App")-->|"connects to"|CGl
+    GQL-->|"connects to"|RAl("Live React App")
     SAl("Structr App")-->|"connects to"|CGl
-    GQL("GraphQL API")-->|"connects to"|CGl
-    Doc("Docusaurus")
+    GQL("GraphQL API")-->|"abstracts"|CGl
+    GQL-->|"schema export"|Doc("Docusaurus")
         subgraph Petesis
           CGl
         end
@@ -33,6 +33,7 @@ import Mermaid from '@theme/Mermaid'
         end
         subgraph Netlify
           Doc
+          RAl
         end
     click HE href "https://healthecco.org" "The HealthECCO Website"
     click CGl href "https://covidgraph.org" "The CovidGraph Website"

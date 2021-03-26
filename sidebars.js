@@ -4,13 +4,18 @@ module.exports = {
       'getting-started/intro',
       'getting-started/get-involved',
       'getting-started/matrix',
-      'developers/conventions',
     ],
     'Repositories': [
       'repositories/overview',
       'repositories/data-loading-repos',
       'repositories/data-loading-pipeline',
+      'repositories/graph-processing-repos',
       'repositories/application-repos',
+      'repositories/infrastructure-repos',
+    ],
+    'Developer Resources': [
+      'developers/conventions',
+      'developers/dev-tools'
     ],
     'Infrastructure': [
       'infrastructure/status',

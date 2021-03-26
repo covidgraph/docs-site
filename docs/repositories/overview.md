@@ -6,6 +6,7 @@ slug: /overview
 ---
 import Mermaid from '@theme/Mermaid'
 
+
 <Mermaid chart={`
   graph LR
     %%
@@ -16,14 +17,16 @@ import Mermaid from '@theme/Mermaid'
     CTG([ClinicalTrials.gov])-->Trials{{data_clinical-trials-gov}}
     JHU([Johns Hopkins])-->Stats{{data_jhu_population}}
     UN([UN Statistics])-->Stats
+    SEMS([SEMS MaSyMoS])-->MaMs
     %%
     %%===Data Loading Repos===
+    DL{{"Motherlode"}}-.->CG
     C19-->CG[(CovidGraph)]
     DBio-->CG
     Patents-->CG
     Trials-->CG
     Stats-->CG
-    DL{{"Motherlode"}}-->CG
+    MaMs{{"data_MaSyMoS"}}-->CG
     %%
     %%===Application Repos
     CG-->VGE{{"Visual Graph Explorer"}}
@@ -36,6 +39,9 @@ import Mermaid from '@theme/Mermaid'
     TGM{{text_gene_match}}-->CG
     BioBert{{data-biobert}}-->CG
     %%
+    %%===Infrastructure===
+    I{{"Infrastructure"}}
+    %%
     %%===Sub Graphs===
         subgraph "data sources"
           PM
@@ -44,6 +50,7 @@ import Mermaid from '@theme/Mermaid'
           CTG
           JHU
           UN
+          SEMS
         end
         subgraph "data loading repos"
           C19
@@ -52,6 +59,7 @@ import Mermaid from '@theme/Mermaid'
           Trials
           Stats
           DL
+          MaMs
         end
         subgraph "graph processing repos"
           FTI
@@ -63,6 +71,9 @@ import Mermaid from '@theme/Mermaid'
           VGE
           RA
           SA
+        end
+        subgraph "infrastructure repos"
+          I
         end
     %%
     %%===Links===
