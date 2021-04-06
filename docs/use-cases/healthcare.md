@@ -10,7 +10,7 @@ A 53 year-old gentleman shows up for an appointment with a primary care physicia
 
 What are the recommended preventive care measures?
 
-Search Results | United States Preventive Services Taskforce
+[Search Results | United States Preventive Services Taskforce](https://www.uspreventiveservicestaskforce.org/uspstf/topic_search_results)
 
 Colorectal Cancer: Screening
 
@@ -22,7 +22,7 @@ Clinical Considerations
 ## Case 2
 A 54 year-old woman comes in to the office complaining of a new sharp pang in her chest  that she’s been experiencing most days of the week for the past 3 weeks or so (she cannot  recall exactly) that comes for 20 minutes at a time whenever she’s feeling stressed. She  does recall feeling more stressed lately after conversations over the holidays with family  about not getting together given COVID-19 case rates. Her EKG is normal sinus rhythm  without ischemic changes.  
 
-What are the recommended steps? See ACC/AHA Clinical Practice Guidelines on  Diagnosis of Stable Ischemic Heart Disease
+What are the recommended steps? See [ACC/AHA Clinical Practice Guidelines on  Diagnosis of Stable Ischemic Heart Disease](https://www.ahajournals.org/doi/10.1161/cir.0000000000000095)
 
 Refer for noninvasive stress testing imaging What is the most appropriate  imaging modality…
 
