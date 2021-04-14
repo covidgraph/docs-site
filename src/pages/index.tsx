@@ -56,7 +56,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Connecting the Docs`}
       description="HealthECCO is a non-profit association that develops CovidGraph<head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
