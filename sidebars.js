@@ -33,8 +33,8 @@ module.exports = {
       'Applications': [
       'applications/visual-graph-explorer',
       'applications/react',
-      'applications/semspect'
-      'applications/bloom'
+      'applications/semspect',
+      'applications/bloom',
     ]
   },
   ...require("./docs/api/sidebar-schema"),
