@@ -19,14 +19,21 @@ Welcome to the HealthECCO Documentation Server. The HealthECCO ecosystem has sev
     DS("Data Sources")-->DP("Docker Pipelines")
     DP-->CG
     CG-->Neo4j("Neo4j Browser")
+    CG-->Bloom("Neo4j Bloom")
     CG[(CovidGraph)]-->|"bolt+s"|VGE("Visual Graph Explorer")
-    CG-->|"bolt+s"|SA("Structr App")
+    CG-->|"bolt+s"|Sem("Semspect")
         subgraph applications
           VGE
-          SA
+          Sem
           RA("React App")
         end
         subgraph api
           GQL-->RA
         end
-    `}/>
+    %%===Links===
+    click Neo4j href "/docs/getting-started/neo4j" "Neo4j Browser"
+    click Bloom href "/docs/getting-started/bloom" "Neo4j Bloom"
+    click DS href "/docs/getting-started/data-sources" "Data Sources"
+    click VGE href "/docs/applications/visual-graph-explorer" "Visual Graph Explorer"
+    click Sem href "/docs/applications/semspect" "Semspect"
+`}/>
