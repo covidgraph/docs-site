@@ -31,9 +31,9 @@ Welcome to the HealthECCO Documentation Server. The HealthECCO ecosystem has sev
           GQL-->RA
         end
     %%===Links===
-    click Neo4j href "/docs/getting-started/neo4j" "Neo4j Browser"
-    click Bloom href "/docs/getting-started/bloom" "Neo4j Bloom"
-    click DS href "/docs/getting-started/data-sources" "Data Sources"
-    click VGE href "/docs/applications/visual-graph-explorer" "Visual Graph Explorer"
-    click Sem href "/docs/applications/semspect" "Semspect"
+    click Neo4j href "/docs/neo4j" "Neo4j Browser"
+    click Bloom href "/docs/bloom" "Neo4j Bloom"
+    click DS href "/docs/data-sources" "Data Sources"
+    click VGE href "/docs/visual-graph-explorer" "Visual Graph Explorer"
+    click Sem href "/docs/semspect" "Semspect"
 `}/>
