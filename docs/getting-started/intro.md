@@ -30,7 +30,7 @@ Welcome to the HealthECCO Documentation Server. The HealthECCO ecosystem has sev
         subgraph api
           GQL-->RA
         end
-    %%===Links===
+    %% ===Links===
     click Neo4j href "/docs/neo4j" "Neo4j Browser"
     click Bloom href "/docs/bloom" "Neo4j Bloom"
     click DS href "/docs/data-sources" "Data Sources"
