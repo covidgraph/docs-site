@@ -3,6 +3,7 @@ id: bloom
 title: Bloom 
 sidebar_label: Bloom
 slug: /bloom
+---
 
 > [Neo4j Bloom](https://neo4j.com/product/bloom/) is an easy-to-use graph exploration application for visually interacting with Neo4j graphs.
 > 
