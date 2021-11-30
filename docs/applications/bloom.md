@@ -4,9 +4,9 @@ title: Bloom
 sidebar_label: Bloom
 slug: /bloom
 
-"[Neo4j Bloom](https://neo4j.com/product/bloom/) is an easy-to-use graph exploration application for visually interacting with Neo4j graphs.
-
-Bloom gives graph novices and experts the ability to visually investigate and explore their graph data from different business perspectives. Its illustrative, codeless search-to-visualization design makes it the ideal interface for fostering communication between peers, managers and executives, and share the innovative work of their graph development and analytics teams."
+> [Neo4j Bloom](https://neo4j.com/product/bloom/) is an easy-to-use graph exploration application for visually interacting with Neo4j graphs.
+> 
+> Bloom gives graph novices and experts the ability to visually investigate and explore their graph data from different business perspectives. Its illustrative, codeless search-to-visualization design makes it the ideal interface for fostering communication between peers, managers and executives, and share the innovative work of their graph development and analytics teams.
 
 # Bloom Login
 
